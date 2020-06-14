@@ -1,0 +1,10 @@
+body {
+	background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");
+}
+
+table {
+	width: 500px ;
+}
+tr, th, td {
+	text-align: center;
+}

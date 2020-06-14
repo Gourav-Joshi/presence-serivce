@@ -11,6 +11,7 @@
 		$sql = "SELECT * FROM `register` where email = '$email' ;" ;
 		$res = mysqli_query($connection, $sql);
 		$out = $res->fetch_assoc() ;
+		$_SESSION["user"] = $out["user_id"] ;
 		$_SESSION["fname"] = $out["f_name"] ;
 		$_SESSION["lname"] = $out["l_name"] ;
 		$_SESSION["email"] = $out["email"] ;
@@ -50,7 +51,7 @@
 			echo "<script type='text/javascript'>
 				alert('Dont Register with Already Registered Credenetials!!! Try Again')
 			</script>";
-			header('location:Registration.html') ;
+			header('location:Error.html') ;
 		}
 	}
 	else
@@ -58,7 +59,7 @@
 		echo "<script type='text/javascript'>
 				alert('INVALID PASSWORD ')
 			</script>";
-		header('location:Registration.html') ;
+		header('location:Error.html') ;
 
 	}
 

@@ -25,6 +25,7 @@
 .heading {
 	width: 35%;
 	padding-top: 5px;
+	margin-bottom: 0px;
 	margin-left:30px;
 	color: white ;
   	text-shadow: 3px 3px 5px black;
@@ -66,8 +67,7 @@ a {
 	height: 100vh;
 	min-width: 80vh
 	display: inline;
-	//background-color: #badbdb;
 	background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");
-
+	background-color: #badbdb;
 }
 

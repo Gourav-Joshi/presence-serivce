@@ -13,6 +13,7 @@
 		$sql = "SELECT * FROM `register` where email = '$email' ;" ;
 		$res = mysqli_query($connection, $sql);
 		$out = $res->fetch_assoc() ;
+		$_SESSION["user"] = $out["user_id"] ;
 		$_SESSION["fname"] = $out["f_name"] ;
 		$_SESSION["lname"] = $out["l_name"] ;
 		$_SESSION["email"] = $out["email"] ;
@@ -50,7 +51,7 @@
 				echo "<script type='text/javascript'>
 					alert('Wrong Password') ;
 				</script>";
-				header('location: Login.html') ;
+				header('location: Error.html') ;
 			}
 		}
 	}

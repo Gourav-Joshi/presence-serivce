@@ -36,17 +36,11 @@ session_start() ;
 
 	<nav class="navigation-side">
 		<div class="option-class">
-			<a href=" " title="Link 1">	Link 1</a>
-		</div>
-		<div class="option-class">
-			<a href=" " title="Link 2">	Link 2</a>
+			<a href="document1.php" onclick="">Document One</a>
 		</div>
 	</nav>
-
-	<hero>
 		<div class="hero">
-			
+			<h1>Please Click on Document 1</h1>
 		</div>
-	</hero>
 </body>
 </html>

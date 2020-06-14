@@ -36,26 +36,28 @@
                 <div class="card-body">
                     <h2 class="title">Register Here</h2>
                     <form name="registration_form"  method="GET" action="Register.php">
+                        
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">first name</label>
-                                    <input id="first_name" class="input--style-4" type="text" name="first_name">
+                                    <input id="first_name" class="input--style-4" type="text" name="first_name" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <input class="input--style-4" type="text" name="last_name" required>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Birthday</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday" required>
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -76,17 +78,18 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input class="input--style-4" type="email" name="email" required >
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
-                                    <input class="input--style-4" id="phone" type="text" name="phone">
+                                    <input class="input--style-4" id="phone" type="text" name="phone" required>
                                 </div>
                             </div>
                         </div>
@@ -95,23 +98,25 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Password</label>
-                                    <input class="input--style-4" type="Password" name="password">
+                                    <input class="input--style-4" type="Password" name="password" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Confirm Password</label>
-                                    <input class="input--style-4" type="Password" name="confirmPassword">
+                                    <input class="input--style-4" type="Password" name="confirmPassword" required>
                                 </div>
                             </div>
                         </div>
 
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" onclick="validateRegistration()" type="submit">Submit</button>
+                            <button class="btn btn--radius-2 btn--blue" onclick="validateRegistration()" type="submit" name="submit">Submit</button>
                         </div>
+
                         <div class="p-t-15" style="text-decoration: underline;">
                         	<a href="Login.html">Already a User ?</a>
                         </div>
+
                     </form>
                 </div>
             </div>
